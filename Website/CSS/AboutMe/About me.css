@@ -1,0 +1,197 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+    width: 16px;               /* width of the entire scrollbar */
+}
+  
+body::-webkit-scrollbar-track {
+    background: rgb(27, 27, 27);        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(65, 65, 65);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: #ffffff;
+}
+
+
+
+/*-----------------------------------------------------------------------------header*/
+
+header {
+    display: flex;
+    width: 100%;
+    height: 5rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(24, 24, 24);
+}
+
+header .spacer-left {
+    display: flex;
+    width: 30%;
+    align-items: center;
+}
+
+header .spacer-middle {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    background-color: rgba(190, 190, 190, 0);
+}
+
+header .spacer-left .backbutton {
+    display: flex;
+    text-decoration: none;
+    background-color: rgb(43, 43, 43);
+    color: rgb(255, 255, 255);
+    font-size: 0.8rem;
+    border-radius: 7px;
+    margin-left: 1rem;
+    padding: 7px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    height: fit-content;
+    width: fit-content;
+    transition: 0.5s ease;
+}
+
+header .spacer-left .backbutton:hover {
+    transition: 0.5s ease;
+    transform: scale(1.1);
+}
+
+header .spacer-right {
+    display: flex;
+    width: 30%;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #dd3500;
+}
+
+/*-----------------------------------------------------------------------------main part*/
+
+main {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+main .spacer-left {
+    width: 100%;
+    background-color: rgb(14, 14, 14);
+}
+
+main .spacer-right {
+    width: 100%;
+    background-color: rgb(14, 14, 14);
+}
+
+main .middle {
+    background-color: rgb(30, 32, 36);
+    height: 100vh;
+    width: 1000px;
+    min-width: 1000px;
+    max-width: 1000px;
+    padding-left: 1.3rem;
+    padding-right: 1.3rem;
+}
+
+main .middle .generalInformation ul {
+    padding-left: 1em;
+}
+
+main .middle .generalInformation h3 {
+    font-size: 1rem;
+    margin-top: 1rem;
+    color: #b82b00;
+}
+ 
+.developer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+    background-color: rgba(210, 105, 30, 0);
+}
+
+.developer h2 {
+    font-size: 33px;
+    color: #dd3500;
+}
+
+.generalInformation {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+    padding: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: rgba(10, 10, 10, 0);
+}
+
+.languages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.languages h3 {
+    margin-bottom: 10px;
+    color: #dd3500;
+}
+
+.IDEs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.IDEs h3 {
+    margin-bottom: 10px;
+    color: #dd3500;
+}
+
+
+
+/*-----------------------------------------------------------------------------footer*/
+
+
+
+
+/*------------------------------------------------------------------------------mobile*/
+@media only screen and (max-width: 1020px) {
+    main .spacer-left {
+        width: 0%;
+    }
+    
+    main .spacer-right {
+        width: 0%;
+    }
+    
+    main .middle {
+        min-width: 0px;
+        width: 100%;
+    }
+
+
+}
