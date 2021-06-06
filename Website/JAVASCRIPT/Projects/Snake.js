@@ -137,7 +137,6 @@ document.addEventListener('keydown', function(event) {
       }
     } 
 })
-
   document.onkeypress = function(e) {
     
   }
